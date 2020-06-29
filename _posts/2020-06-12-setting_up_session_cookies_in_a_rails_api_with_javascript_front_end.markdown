@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Setting up Session Cookies in a Rails API with Javascript front end "
-date:       2020-06-12 13:38:51 +0000
+date:       2020-06-12 09:38:52 -0400
 permalink:  setting_up_session_cookies_in_a_rails_api_with_javascript_front_end
 ---
 
@@ -78,7 +78,10 @@ class ApplicationController < ActionController::API
     private 
 		
     def set_csrf_cookie
-        cookies["CSRF-TOKEN"] = form_authenticity_token
+       cookies["CSRF-TOKEN"] = {
+            value: form_authenticity_token,
+            domain: :all 
+        }
     end
 end
 ```
