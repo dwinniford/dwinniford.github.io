@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Exploring WeChat Mini Program Development"
-date:       2020-07-23 18:32:35 +0000
+date:       2020-07-23 14:32:36 -0400
 permalink:  exploring_wechat_mini_program_development
 ---
 
@@ -108,7 +108,7 @@ Curious about `wx.cloud...`?  According to the [docs](http://developers.weixin.q
 
 Select 'New node.js cloud function'
 
-In cloudFunctionName/index.js create a function according to the [docs](http://https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/collection.add.html).
+In cloudFunctionName/index.js create a function according to the [docs](http://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/collection.add.html).
 
 ```
 const cloud = require('wx-server-sdk')
